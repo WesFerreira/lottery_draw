@@ -1,4 +1,4 @@
-package com.fivevalidation.lottery_draw.domain;
+package com.fivevalidation.lottery_draw.domain.ticket;
 
 import jakarta.validation.constraints.NotBlank;
 

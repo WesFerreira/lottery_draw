@@ -1,4 +1,4 @@
-package com.fivevalidation.lottery_draw.domain;
+package com.fivevalidation.lottery_draw.domain.usuario;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,23 +6,17 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Entity
-@Table(name = "tickets")
+@Table(name = "usuarios")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Ticket {
+public class Usuario {
 
     @Id @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nomeUsuario;
-    private String numero;
+    private String nome;
+    private String email;
 
-    public Ticket(TicketRecord dados) {
-        this.nomeUsuario = dados.nomeUsuario();
-        this.numero = dados.numero();
-    }
 }

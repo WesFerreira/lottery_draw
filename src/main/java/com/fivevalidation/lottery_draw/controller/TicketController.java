@@ -1,7 +1,7 @@
 package com.fivevalidation.lottery_draw.controller;
 
-import com.fivevalidation.lottery_draw.domain.Ticket;
-import com.fivevalidation.lottery_draw.domain.TicketRecord;
+import com.fivevalidation.lottery_draw.domain.ticket.Ticket;
+import com.fivevalidation.lottery_draw.domain.ticket.TicketRecord;
 import com.fivevalidation.lottery_draw.repository.TicketRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
