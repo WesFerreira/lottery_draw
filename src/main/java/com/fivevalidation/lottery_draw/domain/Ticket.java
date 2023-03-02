@@ -20,6 +20,9 @@ public class Ticket {
     private Long id;
     private String nomeUsuario;
     private String numero;
-    private LocalDate dataHora;
 
+    public Ticket(TicketRecord dados) {
+        this.nomeUsuario = dados.nomeUsuario();
+        this.numero = dados.numero();
+    }
 }
