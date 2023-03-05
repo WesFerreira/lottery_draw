@@ -19,12 +19,11 @@ public class Ticket {
     private Long id;
     private String nomeUsuario;
     private String numero;
-
-    @ManyToOne (fetch = FetchType.LAZY)
-    private Usuario usuario;
+    private String email;
 
     public Ticket(TicketRecord dados) {
         this.nomeUsuario = dados.nomeUsuario();
         this.numero = dados.numero();
+        this.email = dados.email();
     }
 }

@@ -9,7 +9,9 @@ public record UsuarioRecord(
         String nome,
         @NotBlank
         @Email
-        String email
+        String email,
+        @NotBlank
+        String senha
 
 ) {
 }

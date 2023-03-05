@@ -18,11 +18,12 @@ public class Usuario {
     private Long id;
     private String nome;
     private String email;
-
+    private String senha;
 
 
     public Usuario(UsuarioRecord dados) {
         this.nome = dados.nome();
         this.email = dados.email();
+        this.senha = dados.senha();
     }
 }
