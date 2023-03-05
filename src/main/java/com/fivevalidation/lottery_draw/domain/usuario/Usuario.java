@@ -19,6 +19,8 @@ public class Usuario {
     private String nome;
     private String email;
 
+
+
     public Usuario(UsuarioRecord dados) {
         this.nome = dados.nome();
         this.email = dados.email();
