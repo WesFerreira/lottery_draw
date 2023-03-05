@@ -42,8 +42,8 @@ public class LotteryController {
     }
 
     @GetMapping("usuario/listar")
-    public List<Usuario> listarUsuario(@RequestParam ("email") String email) {
-        return usuarioRepository.findByEmail(email);
+    public List<Usuario> listarUsuario(@RequestParam ("email") String email, @RequestParam("senha") String senha) {
+        return usuarioRepository.findByEmailAndSenha(email, senha);
     }
 
 }
