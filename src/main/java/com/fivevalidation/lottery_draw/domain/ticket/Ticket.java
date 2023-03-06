@@ -6,6 +6,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "tickets")
 @Getter
@@ -19,6 +21,10 @@ public class Ticket {
     private String nomeUsuario;
     private String numero;
     private String email;
+
+    private BigDecimal preçoLiquido;
+
+    private BigDecimal preçoBruto;
 
     public Ticket(TicketRecord dados) {
         this.nomeUsuario = dados.nomeUsuario();

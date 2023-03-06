@@ -1,4 +1,4 @@
-package com.fivevalidation.lottery_draw.domain;
+package com.fivevalidation.lottery_draw.domain.sorteio;
 
 import java.util.ArrayList;
 import java.util.Collections;
