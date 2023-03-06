@@ -1,6 +1,5 @@
 package com.fivevalidation.lottery_draw.domain.ticket;
 
-import com.fivevalidation.lottery_draw.domain.usuario.Usuario;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -25,5 +24,11 @@ public class Ticket {
         this.nomeUsuario = dados.nomeUsuario();
         this.numero = dados.numero();
         this.email = dados.email();
+    }
+
+    public Ticket(String nomeUsuario, String numero, String email) {
+        this.nomeUsuario = nomeUsuario;
+        this.numero = numero;
+        this.email = email;
     }
 }
