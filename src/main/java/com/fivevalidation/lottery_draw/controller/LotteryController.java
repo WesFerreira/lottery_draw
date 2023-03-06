@@ -58,6 +58,7 @@ public class LotteryController {
 
     @GetMapping("sorteio")
     public List<Ticket> informarSorteado() {
+
         Sorteio sorteio = new Sorteio();
         String [] numerosSorteados = sorteio.numeroSorteados().split(",");
         return ticketRepository.findTicketsByNumerosSorteados(

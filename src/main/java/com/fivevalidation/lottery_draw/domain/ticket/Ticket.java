@@ -32,9 +32,9 @@ public class Ticket {
         this.email = dados.email();
     }
 
-    public Ticket(String nomeUsuario, String numero, String email) {
-        this.nomeUsuario = nomeUsuario;
-        this.numero = numero;
-        this.email = email;
-    }
+//    public Ticket(String nomeUsuario, String numero, String email) {
+//        this.nomeUsuario = nomeUsuario;
+//        this.numero = numero;
+//        this.email = email;
+//    }
 }
