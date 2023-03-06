@@ -61,7 +61,7 @@ public class LotteryController {
     }
 
     @GetMapping("sorteio")
-    public List<Ticket> informaçãoSorteado() {
+    public List<Ticket> informacaoSorteado() {
         Sorteio sorteio = new Sorteio();
         String [] numerosSorteados = sorteio.numeroSorteados().split(",");
 
