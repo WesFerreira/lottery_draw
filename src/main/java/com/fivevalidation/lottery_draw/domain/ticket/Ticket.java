@@ -1,16 +1,14 @@
 package com.fivevalidation.lottery_draw.domain.ticket;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "tickets")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -25,6 +23,8 @@ public class Ticket {
     private BigDecimal preçoLiquido;
 
     private BigDecimal preçoBruto;
+
+    private String idSorteio;
 
     public Ticket(TicketRecord dados) {
         this.nomeUsuario = dados.nomeUsuario();
